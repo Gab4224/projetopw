@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos de Pet Shop</title>
+    <style>
+        ::selection{
+            background-color:#FF00F3FF;
+        }
+        body {
+            font-family: cursive;
+            background-image:url(fundo.png);
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #FFC66C;
+            border-radius: 0px;
+        }
+        header {
+            max-width: 780px;
+            background: #FFC66C;
+            color: #856CFF;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .item {
+            border: 1px solid #2D4772;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Logo%20shop.png." alt="Image" height="175" width="175">
+</header>
+<form>
+<div class="grid">
+    <div class="item">
+        <img src="ração%20cão.jpg" alt="Produto 1">
+        <h3>Ração pedigree</h3>
+        <p>Ração a base de carne e vegetais para cães de médio porte</p>
+        <p>R$ 51,69</p>
+    </div>
+    <div class="item">
+        <img src="ração%20gato.jpg" alt="Produto 2">
+        <h3>Ração whiskas</h3>
+        <p>Ração Whiskas para gatos castrados</p>
+        <p>R$ 53,99</p>
+    </div>
+    <div class="item">
+        <img src="periquita.jpg" alt="Produto 3">
+        <h3>Ração Nutrópica</h3>
+        <p>Ração nutripóca a base de grãos para calopsitas</p>
+        <p>R$ 23,99</p>
+    </div>
+    <div class="item">
+        <img src="Shampoo%20cachorro.jpg" alt="Produto 4">
+        <h3>Shampoo Procão</h3>
+        <p>Shampoo e condicionador para cães</p>
+        <p>R$ 25,90</p>
+    </div>
+    <div class="item">
+        <img src="Shampoo%20gato.jpg" alt="Produto 5">
+        <h3>Shampoo Procão (gatos)</h3>
+        <p>Shampoo antipulgas pra gatos</p>
+        <p>R$ 23,00</p>
+    </div>
+    <div class="item">
+        <img src="Balanço%20(1).jpg" alt="Produto 6" height="150" width="150">
+        <h3>Balanço para pássaros</h3>
+        <p>balanço para pássaro pequeno em peça única</p>
+        <p>R$ 36,50</p>
+    </div>
+</div>
+</form>
+</body>
+</html>

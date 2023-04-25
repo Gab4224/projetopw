@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Tosa</title>
+  <style>
+    /* Estilos gerais */
+    ::selection{
+      background-color:#FF00F3FF;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: cursive;
+      background-image:url(fundo.png);
+    }
+    /* Estilos do formulário */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFC66C;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <h1>Agendamento de Tosa</h1>
+  <center>
+    <img src="Logo%20sem%20texto.png" alt="Image" height="100" width="100">
+  </center>
+  <label for="nome">Nome completo:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" required>
+
+  <label for="espécie">Espécie:</label>
+  <select id="espécie" name="espécie" required>
+    <option value="">Selecione a espécie</option>
+    <option value="Cachorro">Cachorro</option>
+    <option value="Gato">Gato</option>
+    <option value="Ave">Ave</option>
+    <option value="Outro">Outro</option>
+  </select>
+
+
+  <label for="tamanho">Tamanho:</label>
+  <select id="tamanho" name="tamanho" required>
+    <option value="">Selecione o tamanho</option>
+    <option value="Pequeno">Pequeno</option>
+    <option value="Médio">Médio</option>
+    <option value="Grande">Grande</option>
+  </select>
+
+  <label for="pet">Nome do pet:</label>
+  <input type="text" id="pet" name="pet" required>
+
+  <label for="raca">Raça:</label>
+  <input type="text" id="raca" name="raca" required>
+
+  <label for="tipo-tosa">Tipo de tosa:</label>
+  <select id="tipo-tosa" name="tipo-tosa">
+    <option value="higiênica">Higiênica</option>
+    <option value="tosa-completa">Tosa completa</option>
+    <option value="tosa-bebê">Tosa bebê</option>
+    <option value="tosa-da-raça">Tosa da raça</option>
+  </select>
+
+  <label for="data">Data:</label>
+  <input type="date" id="data" name="data" required>
+
+  <label for="hora">Hora:</label>
+  <input type="time" id="hora" name="hora" min="09:00" max="18:00" required>
+
+  <input type="submit" value="Agendar">
+</form>

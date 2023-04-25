@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Page na Pet Shop</title>
+  <style>
+    ::selection{
+      background-color:#FF00F3FF;
+    }
+    body {
+      font-family: cursive;
+      background-image:url(/img/fundo.png);
+    }
+
+    #container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #FFC66C;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px #BBBBBB;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], select {
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #BBBBBB;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #856CFF;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #FFD600;
+    }
+  </style>
+</head>
+<body>
+<div id="container">
+
+  <h1>Agendamento de Page</h1>
+
+  <center>
+  <img src="Logo%20sem%20texto.png" alt="Image" height="100" width="100">
+  </center>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="He">Horário de entrega:</label>
+
+    <input type="time" id="He" name="He"
+           min="09:00" max="18:00" required>
+
+    <label for="Hr">Horário de retirada:</label>
+
+    <input type="time" id="Hr" name="Hr"
+           min="09:00" max="18:00" required><br>
+
+    <label for="pet">Nome do Pet:</label>
+    <input type="text" id="pet" name="pet" required>
+
+    <label for="raca">Raça:</label>
+    <input type="text" id="raca" name="raca" required>
+
+    <label for="espécie">Espécie:</label>
+    <select id="espécie" name="espécie" required>
+      <option value="">Selecione a espécie</option>
+      <option value="Cachorro">Cachorro</option>
+      <option value="Gato">Gato</option>
+      <option value="Ave">Ave</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+
+    <label for="tamanho">Tamanho:</label>
+    <select id="tamanho" name="tamanho" required>
+      <option value="">Selecione o tamanho</option>
+      <option value="Pequeno">Pequeno</option>
+      <option value="Médio">Médio</option>
+      <option value="Grande">Grande</option>
+    </select>
+
+    <input type="submit" value="Agendar">
+  </form>
+</div>
+</body>
+</html>
