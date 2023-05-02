@@ -8,11 +8,11 @@ import javax.ws.rs.core.MediaType;
 
 
 @Path("")
-public class Cadatro {
+public class Cadastro {
 
     private final Template cadastro;
 
-    public Cadatro(Template cadastro) {
+    public Cadastro(Template cadastro) {
         this.cadastro = cadastro;
     }
 
