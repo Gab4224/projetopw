@@ -17,7 +17,7 @@ public class Login {
     }
 
     @GET
-    @Path("/login")
+    @Path("/")
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance getLogin() {
         return login.instance();
