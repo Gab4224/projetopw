@@ -9,11 +9,11 @@ import javax.ws.rs.core.MediaType;
 
 
     @Path("")
-    public class banho {
+    public class Banho {
 
         private final Template banho;
 
-        public banho(Template banho) {
+        public Banho(Template banho) {
             this.banho = banho;
         }
 

@@ -9,11 +9,11 @@ import javax.ws.rs.core.MediaType;
 
 
 @Path("")
-public class principal {
+public class Principal {
 
     private final Template principal ;
 
-    public principal(Template principal) {
+    public Principal(Template principal) {
         this.principal = principal;
     }
 

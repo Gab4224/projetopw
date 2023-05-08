@@ -9,18 +9,18 @@ import javax.ws.rs.core.MediaType;
 
 
 @Path("")
-public class tosa {
+public class Produtos {
 
-    private final Template tosa ;
+    private final Template produtos ;
 
-    public tosa(Template tosa) {
-        this.tosa= tosa;
+    public Produtos(Template produtos) {
+        this.produtos = produtos;
     }
 
     @GET
-    @Path("/tosa")
+    @Path("/produtos")
     @Produces(MediaType.TEXT_HTML)
-    public TemplateInstance gettosa() { return tosa.instance();
+    public TemplateInstance getprodutos() { return produtos.instance();
     }
 
 }
